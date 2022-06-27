@@ -1,6 +1,6 @@
 # MoreReferenceProxies
 
-A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that adds reference proxy sources to bag editors and list editors.
+A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that adds reference proxy sources to bag editors, list editors, the user inspector.
 
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
