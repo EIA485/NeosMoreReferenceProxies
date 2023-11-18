@@ -1,12 +1,12 @@
 ﻿using HarmonyLib;
-using NeosModLoader;
+using ResoniteModLoader;
 using FrooxEngine;
-using BaseX;
+using Elements.Core;
 using FrooxEngine.UIX;
 
 namespace MoreReferenceProxies
 {
-	public class MoreReferenceProxies : NeosMod
+	public class MoreReferenceProxies : ResoniteMod
 	{
 		public override string Name => "MoreReferenceProxies";
 		public override string Author => "eia485";
@@ -54,9 +54,9 @@ namespace MoreReferenceProxies
 			InteractionElement.ColorDriver colorDriver = textSlot.AttachComponent<Button>().ColorDrivers.Add();
 			Text text = textSlot.GetComponent<Text>();
 			colorDriver.ColorDrive.Target = text.Color;
-			colorDriver.NormalColor.Value = color.Black;
-			colorDriver.HighlightColor.Value = color.Blue;
-			colorDriver.PressColor.Value = color.Blue;
-		}
+			colorDriver.NormalColor.Value = RadiantUI_Constants.TEXT_COLOR;
+            colorDriver.HighlightColor.Value = RadiantUI_Constants.LABEL_COLOR;
+            colorDriver.PressColor.Value = RadiantUI_Constants.HEADING_COLOR;
+        }
 	}
 }
