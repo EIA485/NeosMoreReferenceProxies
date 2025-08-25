@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<Version>1.1.1</Version>
+		<Version>1.1.2</Version>
 		<Authors>eia485</Authors>
 		<Product>$(AssemblyName)</Product>
 		<RepositoryUrl>https://github.com/EIA485/Neos$(Product)</RepositoryUrl>

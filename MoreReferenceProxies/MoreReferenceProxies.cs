@@ -22,13 +22,6 @@ namespace MoreReferenceProxies
 			{
 				BuildProxy(bag, ui);
 			}
-			
-			[HarmonyPostfix]
-			[HarmonyPatch(typeof(SyncMemberEditorBuilder), "BuildList")]
-			public static void BuildListPostFix(ISyncList list, UIBuilder ui)
-			{
-				BuildProxy(list, ui);
-			}
 
 			[HarmonyPostfix]
 			[HarmonyPatch(typeof(UserInspectorItem), "RebuildUser")]

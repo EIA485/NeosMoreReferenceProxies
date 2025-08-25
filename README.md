@@ -1,6 +1,6 @@
 # MoreReferenceProxies
 
-A [BepisLoader](https://github.com/ResoniteModding/BepisLoader) mod for [Resonite](https://resonite.com/) that adds reference proxy sources to bag editors, list editors, the user inspector.
+A [BepisLoader](https://github.com/ResoniteModding/BepisLoader) mod for [Resonite](https://resonite.com/) that adds reference proxy sources to bag editors and the user inspector.
 
 ## Installation
 1. Install [BepisLoader](https://github.com/ResoniteModding/BepisLoader).
