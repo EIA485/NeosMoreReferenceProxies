@@ -1,22 +1,17 @@
-﻿using HarmonyLib;
-using ResoniteModLoader;
+﻿using BepInEx;
+using BepInEx.NET.Common;
+using BepInExResoniteShim;
+using HarmonyLib;
 using FrooxEngine;
-using Elements.Core;
 using FrooxEngine.UIX;
 
 namespace MoreReferenceProxies
 {
-	public class MoreReferenceProxies : ResoniteMod
+    [ResonitePlugin(PluginMetadata.GUID, PluginMetadata.NAME, PluginMetadata.VERSION, PluginMetadata.AUTHORS, PluginMetadata.REPOSITORY_URL)]
+    [BepInDependency(BepInExResoniteShim.PluginMetadata.GUID)]
+    public class MoreReferenceProxies : BasePlugin
 	{
-		public override string Name => "MoreReferenceProxies";
-		public override string Author => "eia485";
-		public override string Version => "1.1.0";
-		public override string Link => "https://github.com/EIA485/NeosMoreReferenceProxies/";
-		public override void OnEngineInit()
-		{
-			Harmony harmony = new Harmony("net.eia485.MoreReferenceProxies");
-			harmony.PatchAll();
-		}
+		public override void Load() => HarmonyInstance.PatchAll();
 
 		[HarmonyPatch]
 		class MoreReferenceProxiesPatch

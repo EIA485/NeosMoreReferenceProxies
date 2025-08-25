@@ -1,8 +1,8 @@
 # MoreReferenceProxies
 
-A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that adds reference proxy sources to bag editors, list editors, the user inspector.
+A [BepisLoader](https://github.com/ResoniteModding/BepisLoader) mod for [Resonite](https://resonite.com/) that adds reference proxy sources to bag editors, list editors, the user inspector.
 
 ## Installation
-1. Install [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader).
-1. Place [MoreReferenceProxies.dll](https://github.com/eia485/NeosMoreReferenceProxies/releases/latest/download/MoreReferenceProxies.dll) into your `rml_mods` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\Resonite\rml_mods` for a default install. You can create it if it's missing, or if you launch the game once with ResoniteModLoader installed it will create the folder for you.
-1. Start the game. If you want to verify that the mod is working you can check your Resonite logs.
+1. Install [BepisLoader](https://github.com/ResoniteModding/BepisLoader).
+1. Place [MoreReferenceProxies.dll](https://github.com/eia485/NeosMoreReferenceProxies/releases/latest/download/MoreReferenceProxies.dll) into your `plugins` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\Resonite\BepInEx\plugins` for a default install.
+1. Start the game. If you want to verify that the mod is working you can check your BepInEx log at `C:\Program Files (x86)\Steam\steamapps\common\Resonite\BepInEx\LogOutput.log`
