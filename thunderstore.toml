@@ -1,0 +1,42 @@
+# This file is used by the Thunderstore CLI to build and publish to Thunderstore. https://github.com/thunderstore-io/thunderstore-cli
+
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "eia485"
+name = "MoreReferenceProxies"
+versionNumber = "1.1.2"
+description = "adds reference proxy sources to bag editors and the user inspector."# max 250 characters
+websiteUrl = "http://github.com/EIA485/NeosMoreReferenceProxies"
+containsNsfwContent = false
+
+[package.dependencies] 
+ResoniteModding-BepisLoader = "1.3.1"
+
+[build]
+icon = "icon.png"
+readme = "README.md"
+outdir = "build"
+
+# Copy the compiled DLL to the plugins folder in mod package
+[[build.copy]]
+source = "MoreReferenceProxies/bin/Release/net9.0/MoreReferenceProxies.dll"
+target = "plugins/"
+
+# Include PDB
+[[build.copy]]
+source = "MoreReferenceProxies/bin/Release/net9.0/MoreReferenceProxies.pdb"
+target = "plugins/"
+
+# include LICENSE file in mod package
+[[build.copy]]
+source = "license.txt"
+target = "/"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["resonite"]
+
+[publish.categories]
+resonite = [ "mods", "inspectors" ] # https://thunderstore.io/api/experimental/community/resonite/category/
